@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lname = trim($_POST['last_name'] ?? '');
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
+    $captchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
     // Basic validation
     if (empty($fname) || empty($lname) || empty($email) || empty($password)) {
@@ -20,6 +21,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (strlen($password) < 6) {
         header("Location: register.php?error=Password must be at least 6 characters");
+        exit;
+    }
+
+    // recaptcha Validation
+    if (!$captchaResponse) {
+        header("Location: register.php?error=Please complete the CAPTCHA");
+        exit;
+    }
+
+    $secretKey = '6LcOF3grAAAAAP6_Vs9qQ1yDeDPyLr5S4bfX2Tmj'; 
+    $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$captchaResponse}");
+    $responseData = json_decode($verifyResponse);
+
+    if (!$responseData->success) {
+        header("Location: register.php?error=CAPTCHA verification failed");
         exit;
     }
 

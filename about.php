@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <title>About Us | FoodFusion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap & Fonts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/design.css">
+  <link rel="icon" type="image/png" href="images/food.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +22,7 @@
   </div>
 </section>
 
-<!--  Our Mission -->
+<!--content of mission -->
 <section class="container py-5">
   <div class="row align-items-center">
     <div class="col-md-6 mb-4 mb-md-0">
@@ -37,7 +36,7 @@
   </div>
 </section>
 
-<!-- Our Team -->
+<!-- team -->
 <section class="bg-light py-5">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Meet the Team</h2>

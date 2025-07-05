@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <title>FoodFusion | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap & Fonts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/design.css"> <!-- Your updated design file -->
+  <link rel="stylesheet" href="css/design.css"> 
+  <link rel="icon" type="image/png" href="images/food.png">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <?php include 'elements/navigation.php'; ?>
 
-<!--  HERO SECTION -->
+<!-- header section -->
 <section class="hero d-flex align-items-center justify-content-center text-center text-white">
   <div class="overlay"></div>
   <div class="container position-relative">
@@ -26,7 +26,7 @@
   </div>
 </section>
 
-<!-- INTRO SECTION -->
+<!-- intro section -->
 <section class="container py-5">
   <div class="row align-items-center">
     <div class="col-md-6">
@@ -40,7 +40,7 @@
   </div>
 </section>
 
-<!--  JOIN US MODAL -->
+<!--  join us modal -->
 <div class="modal fade" id="joinModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content p-3">
