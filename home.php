@@ -8,7 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/design.css"> 
   <link rel="icon" type="image/png" href="images/food.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -35,7 +34,7 @@
       <a href="about.php" class="btn btn-outline-dark">Learn More</a>
     </div>
     <div class="col-md-6">
-      <img src="images/about-preview.jpg" class="img-fluid rounded shadow" alt="About Preview">
+      <img src="images/mission-cooking.jpg" class="img-fluid rounded shadow" alt="About Preview">
     </div>
   </div>
 </section>
@@ -50,10 +49,10 @@
       </div>
       <form action="registerprocess.php" method="POST">
         <div class="modal-body">
-          <input type="text" name="first_name" class="form-control mb-2" placeholder="First Name" required>
-          <input type="text" name="last_name" class="form-control mb-2" placeholder="Last Name" required>
-          <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
-          <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+          <input type="text" name="first_name" class="form-control mb-2" placeholder="First Name" >
+          <input type="text" name="last_name" class="form-control mb-2" placeholder="Last Name" >
+          <input type="email" name="email" class="form-control mb-2" placeholder="Email" >
+          <input type="password" name="password" class="form-control mb-2" placeholder="Password" >
         </div>
         <div class="modal-footer">
           <button type="submit" name="btnregister" class="btn btn-warning w-100">Register</button>
