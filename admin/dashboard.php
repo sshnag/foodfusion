@@ -5,8 +5,8 @@ include('../db/connection.php');
 
 
 // Getting download count per category
-$categoryDownloads = [];
-$sql = "SELECT c.name AS category_name, SUM(b.download_count) AS total_downloads 
+$users = [];
+$sql = "SELECT users.name AS category_name, SUM(b.download_count) AS total_downloads 
         FROM booktb b
         JOIN categorytb c ON b.category_id = c.id
         GROUP BY c.name";

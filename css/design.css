@@ -180,26 +180,36 @@ input.form-control:focus {
   color: #064e3b;
 }
 
-/* --------- FOOTER ----------- */
-footer {
+.custom-footer {
   background-color: #064e3b;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #FCF9ED;
-  margin-top: 60px;
-  border-top: 2px solid #FADE50;
+  border-top: 1px solid #e0d9c0;
+  font-family: 'Poppins', sans-serif;
+  color: #064e3b;
 }
 
-footer a {
+.footer-link {
+  margin: 0 12px;
   color: #FADE50;
-  margin: 0 10px;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-link:hover {
+  color: #fade50;
 }
+
+.footer-icon {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #68652e;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #fade50;
+}
+
 
 /* --------- RECIPE CARDS -------- */
 .recipe-card {
@@ -245,4 +255,18 @@ footer a:hover {
   .container, .modal-dialog {
     padding: 0 15px;
   }
+}
+
+/*----------Privacy Policy--------------*/
+  .policy-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.policy-section {
+    margin-bottom: 30px;
+}
+.policy-section h2 {
+    color: #28a745;
+    margin-bottom: 20px;
 }

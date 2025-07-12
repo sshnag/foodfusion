@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/design.css"> 
   <link rel="icon" type="image/png" href="images/food.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -33,6 +34,8 @@
       <p>We celebrate home chefs and culinary creativity. Whether you're into quick meals or traditional dishes, join our mission to make cooking joyful and accessible.</p>
       <a href="about.php" class="btn btn-outline-dark">Learn More</a>
     </div>
+    <br>
+    <br>
     <div class="col-md-6">
       <img src="images/mission-cooking.jpg" class="img-fluid rounded shadow" alt="About Preview">
     </div>
